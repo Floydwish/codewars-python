@@ -21,6 +21,15 @@ def reverse_words(s):
     l.reverse()
     return ' '.join([x for x in l])
 
+#solution 1 优化
+#1.将string分割为list
+#2.使用str的reverse()翻转list
+#3.使用空格连接list中各单词
+def reverse_words(s):
+    l = s.split(" ")
+    l.reverse()
+    return ' '.join(l)
+
 
 #solution 2
 #1.将string分割为list
